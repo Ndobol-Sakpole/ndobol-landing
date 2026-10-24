@@ -34,7 +34,7 @@ Tanpa URL database, pendaftaran lokal disimpan di `storage/playtest.sqlite`. Fil
 
 Kalau `DATABASE_URL` belum diisi atau migrasi belum dijalankan, website tetap terbuka tetapi form menampilkan pesan gagal. Form tidak akan mengaku berhasil menyimpan data. SQLite hanya dipakai saat pengembangan lokal; function Vercel tidak memakainya.
 
-Biarkan `GAME_URL` kosong selama game belum dideploy. Tombol prototipe akan menuju panduan menjalankan game. Konfigurasi publik dibaca saat build, jadi lakukan deploy ulang setelah mengubahnya.
+Tombol bermain secara bawaan membuka [demo resmi](https://ndobol-game-teal.vercel.app/apps/web/index.html). Isi `GAME_URL` hanya jika ingin memakai deployment lain. Panduan host sendiri tetap tersedia secara terpisah. Konfigurasi publik dibaca saat build, jadi lakukan deploy ulang setelah mengubahnya.
 
 Catatan operasional lengkap ada di [panduan deployment](docs/deployment.md), dalam bahasa English. Konfigurasi mengacu pada dokumentasi [Node runtime Vercel](https://vercel.com/docs/functions/runtimes/node-js) dan [konfigurasi proyek](https://vercel.com/docs/project-configuration/vercel-json).
 

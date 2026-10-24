@@ -9,7 +9,7 @@ The build produces 18 pages across Indonesian and English, plus error pages, ima
 Set these variables in Vercel, then redeploy:
 
 - `DATABASE_URL`: a Neon Postgres connection string, used only by the server functions.
-- `GAME_URL`: the playable game's public URL, when available. Otherwise the CTA goes to `/self-host`.
+- `GAME_URL`: optional override for the playable game URL. By default, play buttons open `https://ndobol-game-teal.vercel.app/apps/web/index.html`. The self-host guide remains a separate link.
 - `SITE_URL`: the production website origin for canonical links and sitemap generation. Do not point preview deployments at a preview URL you want indexed. Use Vercel's preview protection/no-index controls.
 
 Use a separate Neon database or branch for preview deployments. Never expose production credentials to untrusted fork previews. No GitHub token or Vercel token is needed in the source code or CI workflow.

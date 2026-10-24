@@ -52,9 +52,9 @@ test('canonical routes preserve query strings and reject writes', async () => {
   assert.deepEqual(await (await fetch(base + '/api/health')).json(), { status: 'ok', service: 'ndobol-sesarengan' });
 });
 
-test('prototype CTA reaches the self-host guide; the browser calculator module is served', async () => {
+test('play CTAs reach the official demo; the browser calculator module is served', async () => {
   const home = await (await fetch(base + '/')).text();
-  assert.match(home, /href="\/self-host">Jalankan prototipe/);
+  assert.match(home, /href="https:\/\/ndobol-game-teal\.vercel\.app\/apps\/web\/index\.html">Coba demo/);
   assert.equal((await fetch(base + '/shared/game/rewards.js')).status, 200);
   for (const resource of ['/apps/web/index.html', '/shared/game/rafts.js', '/services/api/server.js', '/.env']) {
     assert.equal((await fetch(base + resource)).status, 404, resource);

@@ -32,7 +32,7 @@ test('Indonesian is the default and English has equivalent routes and language m
 test('English links stay in English while assets, downloads, game and Indonesian switch remain intact', () => {
   const { html } = renderPage('/en');
   assert.match(html, /href="\/en\/ekonomi"/);
-  assert.match(html, /href="\/en#playtest"/);
+  assert.match(html, /href="https:\/\/ndobol-game-teal\.vercel\.app\/apps\/web\/index\.html">Play the demo/);
   assert.match(html, /data-language="id" href="\/"/);
   assert.match(html, /href="\/en\/self-host"/);
   assert.match(html, /src="\/assets\/images\/logo.webp"/);

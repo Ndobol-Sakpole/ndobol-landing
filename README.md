@@ -34,7 +34,7 @@ Without a database URL, local signups are saved in `storage/playtest.sqlite`. Th
 
 If `DATABASE_URL` is missing or the migration has not run, the website still loads but the form returns an error. It will not claim to have saved a signup. SQLite is for local development; the Vercel functions never use it.
 
-Leave `GAME_URL` empty until the game is deployed. The prototype button will point to the self-host guide. Public settings are read at build time, so redeploy after changing them.
+The play buttons open the [official demo](https://ndobol-game-teal.vercel.app/apps/web/index.html) by default. Set `GAME_URL` only when you want to use another deployment. The self-host guide remains available separately. Public settings are read at build time, so redeploy after changing them.
 
 More detail: [deployment and operations](docs/deployment.md). Vercel setup follows its [Node runtime](https://vercel.com/docs/functions/runtimes/node-js) and [project configuration](https://vercel.com/docs/project-configuration/vercel-json) documentation.
 

@@ -5,6 +5,7 @@ import { catalogEnglish } from './en-catalog.js';
 import { pagesEnglish } from './en-pages.js';
 import { clientEnglish } from './en-client.js';
 export const english = {
+  'Coba demo': 'Play the demo',
   'Jalankan prototipe': 'Run the prototype',
   'Game dan website promosi punya repository terpisah. Untuk server multiplayer dan deployment game, ikuti README terbaru di repository game.': 'The game and promotional website have separate repositories. For multiplayer hosting and game deployment, follow the latest README in the game repository.',
   'Buka panduan game di GitHub ↗': 'Read the game guide on GitHub ↗',
