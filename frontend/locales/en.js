@@ -5,6 +5,11 @@ import { catalogEnglish } from './en-catalog.js';
 import { pagesEnglish } from './en-pages.js';
 import { clientEnglish } from './en-client.js';
 export const english = {
+  'Demo di Monad Testnet': 'Demo on Monad Testnet',
+  'Hubungkan wallet untuk mulai': 'Connect a wallet to start',
+  'Kami menyiapkan koleksi getek dan catatan kontribusi di Monad. Demo publik menggunakan wallet di Monad Testnet.': 'We are preparing raft collectibles and contribution records on Monad. The public demo uses a wallet on Monad Testnet.',
+  'Demo publik memerlukan wallet di Monad Testnet. Pendaftaran playtest tetap gratis dan tidak memerlukan wallet. Koleksi getek berbayar masih berupa rancangan; belum ada penjualan NFT atau distribusi reward aktif.': 'The public demo requires a wallet on Monad Testnet. Joining the playtest list is still free and does not require a wallet. Paid raft collectibles are still a proposal; NFT sales and reward distribution are not active.',
+
   'Coba demo': 'Play the demo',
   'Jalankan prototipe': 'Run the prototype',
   'Game dan website promosi punya repository terpisah. Untuk server multiplayer dan deployment game, ikuti README terbaru di repository game.': 'The game and promotional website have separate repositories. For multiplayer hosting and game deployment, follow the latest README in the game repository.',
@@ -52,8 +57,6 @@ export const english = {
   'Co-op di browser': 'Browser co-op',
   'Solo + bot atau ruang online': 'Solo + bots or online rooms',
   '2 sungai untuk dijelajahi': '2 rivers to explore',
-  'Mulai tanpa wallet': 'Start without a wallet',
-  'Prototipe gratis dicoba': 'Free to try the prototype',
   'Prototipe sedang dikembangkan. Mode online membutuhkan server game aktif; visual karakter dan adegan promosi merupakan konsep.': 'The prototype is in development. Online play requires an active game server; promotional characters and scenes are concept art.',
   'Cara mainnya': 'How to play',
   'Satu tujuan.': 'One destination.',
@@ -87,7 +90,6 @@ export const english = {
   'Main bareng. Punya cerita.': 'Play together. Make memories.',
   'Geteknya unik.': 'Distinctive rafts.',
   'Kontribusinya tercatat.': 'Recorded contributions.',
-  'Kami menyiapkan koleksi getek dan catatan kontribusi di Monad. Kamu tetap bisa mulai bermain tanpa wallet.': 'We are building raft collectibles and contribution records on Monad. You can still start playing without a wallet.',
   'Main & kumpulkan': 'Play & collect',
   'Arahkan getek, ambil sampah di sungai, dan selesaikan perjalanan bersama.': 'Steer your raft, collect river litter, and finish the journey together.',
   'Periksa kontribusi': 'Verify contributions',
@@ -139,7 +141,6 @@ export const english = {
   'Bisa main bareng teman?': 'Can I play with friends?',
   'Prototipe memiliki mode solo dengan bot dan mode ruang online untuk 2–4 pemain. Mode online membutuhkan server game yang aktif. Playtest akan membantu kami menguji koneksi dan kekompakan antarpemain.': 'The prototype has solo play with bots and online rooms for 2–4 players. Online play requires an active game server. Playtesting helps us test connections and teamwork.',
   'Harus bayar atau punya wallet?': 'Do I need to pay or have a wallet?',
-  'Mencoba prototipe dan mendaftar playtest gratis, tanpa wallet. Koleksi getek berbayar masih berupa rancangan; belum ada penjualan NFT atau distribusi reward aktif.': 'Trying the prototype and joining the playtest list are free, with no wallet required. Paid raft collectibles are still a proposal; NFT sales and reward distribution are not active.',
   'Setelah daftar playtest, apa selanjutnya?': 'What happens after I sign up?',
   'Minatmu disimpan untuk sesi pengujian berikutnya. Tim DeEs dapat menghubungi lewat email sesuai perangkat dan kesiapan sesi. Jadwal belum diumumkan dan pendaftaran belum menjamin slot.': 'Your interest is saved for upcoming testing sessions. Team DeEs may email you based on your device and session availability. Dates are not announced yet, and registration does not guarantee a place.',
   'Bagaimana sampah dan dampaknya dihitung?': 'How are litter and impact measured?',
