@@ -1,0 +1,89 @@
+.web3-section { padding-top: 72px; }
+.web3-heading { display: grid; grid-template-columns: 1.2fr 1fr; align-items: end; gap: 80px; margin-bottom: 42px; }
+.web3-heading > p { max-width: 440px; font-size: 15px; line-height: 1.8; }
+.web3-heading h2 span { color: #7864bd; }
+.collectible-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+.collectible { min-width: 0; }
+.collectible-art { position: relative; height: 300px; border-radius: 24px; background: #f6edf4; padding: 44px 20px 10px; display: grid; place-items: center; overflow: hidden; }
+.collectible-art img { width: 100%; height: 100%; object-fit: contain; min-height: 0; transition: transform .3s; }
+.collectible:hover .collectible-art img { transform: rotate(-3deg) scale(1.04); }
+.collectible-tag { position: absolute; top: 18px; left: 22px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: #6d5773; }
+.collectible--raft .collectible-art { background: #f9f4e2; }
+.collectible--badge .collectible-art { background: #edeaf8; }
+.collectible-copy { padding: 24px 2px 0; }
+.development-label { color: #7d6c98; font-size: 10px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+.collectible h3 { font-size: 29px; margin: 10px 0 12px; }
+.collectible p { font-size: 13px; line-height: 1.8; }
+.badge-art { width: 186px; height: 186px; border: 8px double #e5c36e; border-radius: 50%; outline: 12px solid #f2d886; background: #173f39; box-shadow: 0 15px 0 #b59c5222; transform: rotate(10deg); display: flex; flex-direction: column; align-items: center; justify-content: center; color: #ffe6a0; }
+.badge-art strong { font-size: 78px; line-height: 1.2; }
+.badge-art span { font-size: 10px; letter-spacing: .13em; }
+.web3-status { display: flex; gap: 12px; align-items: center; font-size: 12px; margin-top: 30px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.web3-status > span { font-size: 26px; color: #7864bd; }
+.monad-brief { display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; border-radius: 28px; padding: 48px; margin-top: 40px; background: #f5f2fc; }
+.monad-brand { display: flex; gap: 23px; align-items: center; font-size: 12px; color: #635280; }
+.monad-brand strong { display: block; font-family: var(--display); font-size: 61px; line-height: 1.2; color: #554196; }
+.monad-brand small { display: block; font-size: 11px; margin-top: 7px; }
+.monad-symbol { display: grid; place-items: center; width: 80px; height: 80px; flex: none; background: #8469cc; color: white; font-size: 46px; border-radius: 24px; transform: rotate(-8deg); }
+.monad-copy p { font-size: 13px; line-height: 1.9; }
+.monad-copy p + p { margin-top: 14px; }
+.text-link { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 700; text-decoration: underline; text-underline-offset: 5px; }
+.monad-copy .text-link { margin-top: 20px; color: #554196; }
+.play-section { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; padding-block: 35px 80px; }
+.play-section > div > p:not(.section-label) { max-width: 420px; font-size: 14px; margin-top: 22px; }
+.play-options { align-self: center; }
+.play-option { display: flex; align-items: center; gap: 22px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+.play-option:hover h3 { color: var(--green); }
+.play-option-number { font-family: var(--display); font-size: 24px; color: var(--green); }
+.play-option h3 { font-size: 28px; }
+.play-option p { margin-top: 8px; font-size: 11px; }
+.play-option > svg { margin-left: auto; }
+.play-options .play-footnote { font-size: 11px; margin-top: 20px; }
+.self-host-page { padding-bottom: 90px; }
+.self-host-page .page-heading .button { margin-top: 24px; }
+.hosting-layout { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 80px; }
+.hosting-steps > section { padding: 32px 0; border-top: 1px solid var(--line); }
+.guide-number { display: block; font-size: 11px; color: var(--green); font-weight: 700; letter-spacing: .1em; margin-bottom: 16px; }
+.hosting-steps h2 { font-size: 34px; margin-bottom: 20px; }
+.hosting-steps p { margin-block: 15px; font-size: 14px; }
+.hosting-steps pre { background: #123f3a; color: #edf6ee; padding: 22px; border-radius: 16px; overflow-x: auto; font-size: 13px; }
+.hosting-steps code { overflow-wrap: anywhere; font-size: .92em; }
+.hosting-steps kbd { border: 1px solid var(--line); padding: 3px 6px; border-radius: 4px; }
+.hosting-steps li { margin: 12px 0; font-size: 14px; color: var(--muted); }
+.hosting-steps details { border-bottom: 1px solid var(--line); padding: 18px 0; }
+.hosting-steps summary { cursor: pointer; font-weight: 700; font-size: 14px; }
+.repo-status { padding: 15px 18px; border-radius: 12px; background: #f9f4e2; }
+.hosting-aside { align-self: start; padding: 30px; background: var(--mint); border-radius: 22px; }
+.hosting-aside dt { font-weight: 700; font-size: 13px; margin-top: 17px; }
+.hosting-aside dd { margin: 0; font-size: 12px; color: var(--muted); }
+.hosting-aside > p:last-child { font-size: 12px; margin-top: 26px; }
+@media (max-width: 1000px) {
+  .web3-heading, .play-section { gap: 35px; }
+  .collectible-art { height: 245px; }
+  .badge-art { transform: rotate(10deg) scale(.8); }
+  .monad-brief { padding: 32px; gap: 30px; }
+  .monad-symbol { display: none; }
+  .hosting-layout { gap: 30px; grid-template-columns: minmax(0, 1fr) 240px; }
+}
+@media (max-width: 760px) {
+  .web3-heading, .play-section, .monad-brief, .hosting-layout { grid-template-columns: 1fr; gap: 30px; }
+  .web3-heading { margin-bottom: 30px; }
+  .web3-heading > p { font-size: 14px; }
+  .collectible-grid { grid-template-columns: 1fr; gap: 36px; }
+  .collectible-art { height: 300px; }
+  .collectible-copy { padding-top: 18px; }
+  .collectible h3 { font-size: 31px; }
+  .badge-art { transform: rotate(10deg); }
+  .monad-brand strong { font-size: 51px; }
+  .monad-symbol { display: grid; width: 68px; height: 68px; }
+  .monad-brief { padding: 26px; }
+  .play-section { padding-block: 10px 35px; }
+  .play-option h3 { font-size: 26px; }
+  .hosting-aside { order: -1; }
+  .hosting-steps h2 { font-size: 30px; }
+  .hosting-steps pre { font-size: 11px; padding: 16px; }
+}
+@media (max-width: 400px) {
+  .monad-brand { gap: 16px; }
+  .monad-brand strong { font-size: 43px; }
+  .monad-symbol { width: 48px; height: 48px; border-radius: 16px; font-size: 32px; }
+}

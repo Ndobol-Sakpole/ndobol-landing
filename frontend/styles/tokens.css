@@ -1,0 +1,48 @@
+@font-face {
+  font-family:Fredoka;
+  src:url('/assets/fonts/fredoka.ttf') format('truetype');
+  font-style:normal;
+  font-weight:300 700;
+  font-display:swap
+}
+
+@font-face {
+  font-family:Jakarta;
+  src:url('/assets/fonts/jakarta-400.ttf') format('truetype');
+  font-style:normal;
+  font-weight:400;
+  font-display:swap
+}
+
+@font-face {
+  font-family:Jakarta;
+  src:url('/assets/fonts/jakarta-600.ttf') format('truetype');
+  font-style:normal;
+  font-weight:600;
+  font-display:swap
+}
+
+@font-face {
+  font-family:Jakarta;
+  src:url('/assets/fonts/jakarta-700.ttf') format('truetype');
+  font-style:normal;
+  font-weight:700;
+  font-display:swap
+}
+
+:root {
+  --white:#fff;
+  --ink:#123f3a;
+  --green:#287e72;
+  --muted:#63716f;
+  --gold:#ffca48;
+  --gold-hover:#ffbd2e;
+  --mint:#eaf4ee;
+  --line:#dbe6e1;
+  --body:Jakarta,Arial,sans-serif;
+  --display:Fredoka,'Arial Rounded MT Bold',sans-serif;
+  --container:1280px;
+  --gutter:clamp(24px,5vw,80px);
+  --pill:99px;
+  --ease:cubic-bezier(.2,.65,.3,1)
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{LANG}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123f3a">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="{{OGLOCALE}}">
+  <meta property="og:image" content="/assets/images/logo.webp">
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  {{ALTERNATES}}
+  <link rel="preload" href="/assets/fonts/fredoka.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/assets/fonts/jakarta-400.ttf" as="font" type="font/ttf" crossorigin>
+  {{PRELOAD}}
+  {{STYLES}}
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Langsung ke konten</a>
+  {{HEADER}}
+  <main id="main">{{CONTENT}}</main>
+  {{FOOTER}}
+</body>
+</html>

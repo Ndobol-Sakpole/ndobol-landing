@@ -1,0 +1,129 @@
+.site-header {
+  position:relative;
+  z-index:20;
+  background:#fff
+}
+
+.header-inner {
+  height:108px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px
+}
+
+.brand {
+  display:block;
+  flex:none;
+  width:180px;
+  padding:10px
+}
+
+.brand img {
+  width:100%;
+  height:auto
+}
+
+.desktop-nav {
+  display:flex;
+  gap:34px;
+  align-items:center
+}
+
+.desktop-nav a {
+  font-size:13px;
+  font-weight:600;
+  position:relative;
+  padding-block:10px
+}
+
+.desktop-nav a:after {
+  content:'';
+  position:absolute;
+  bottom:3px;
+  left:0;
+  right:0;
+  height:2px;
+  background:var(--green);
+  transform:scaleX(0);
+  transition:transform .2s
+}
+
+.desktop-nav a:hover:after,.desktop-nav a[aria-current]:after {
+  transform:scaleX(1)
+}
+
+.header-cta {
+  font-size:13px;
+  min-height:46px;
+  padding:12px 22px
+}
+
+.menu-toggle {
+  display:none;
+  width:44px;
+  height:44px;
+  place-content:center;
+  gap:6px;
+  border-radius:50%;
+  background:var(--mint)
+}
+
+.menu-toggle span {
+  width:19px;
+  height:2px;
+  background:var(--ink);
+  transition:transform .2s
+}
+
+.menu-toggle[aria-expanded=true] span:first-child {
+  transform:translateY(4px) rotate(45deg)
+}
+
+.menu-toggle[aria-expanded=true] span:last-child {
+  transform:translateY(-4px) rotate(-45deg)
+}
+
+.mobile-nav {
+  position:absolute;
+  left:var(--gutter);
+  right:var(--gutter);
+  top:88px;
+  box-shadow:0 16px 50px #123f3a1a;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:18px
+}
+
+.mobile-nav a {
+  display:flex;
+  justify-content:space-between;
+  padding:13px 10px;
+  font-weight:600
+}
+
+.mobile-nav a:hover {
+  background:var(--mint);
+  border-radius:8px
+}
+
+@media(max-width:1000px) {
+  .header-inner { height:94px; }
+  .brand { width:150px; }
+  .desktop-nav { gap:20px; }
+  .header-cta { font-size:12px; gap:10px; padding:12px 17px; }
+}
+@media(max-width:760px) {
+  .desktop-nav,.header-cta { display:none; }
+  .menu-toggle { display:grid; }
+  .header-inner { height:88px; }
+  .brand { width:142px; padding:6px 0; }
+}
+@media(min-width:1101px) {
+  .header-inner { max-width:1120px; }
+  .brand { width:235px; }
+  .desktop-nav { gap:36px; }
+  .desktop-nav a { font-size:16px; }
+  .header-cta { font-size:15px; padding:13px 24px; min-height:49px; }
+}

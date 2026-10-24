@@ -1,0 +1,56 @@
+/* The finish scene runs into a dark riverbank, as in the Pyronyx reference. */
+.site-footer { --footer-ink:#103e38; background:var(--footer-ink); color:#f6fbf8; }
+.footer-visual { position:relative; isolation:isolate; min-height:700px; height:63vw; max-height:1200px; overflow:hidden; background:#fff; }
+.footer-visual::after { content:''; position:absolute; z-index:0; inset:auto 0 -1px; height:18%; background:linear-gradient(180deg,#103e3800,var(--footer-ink)); pointer-events:none; }
+.footer-invitation { position:relative; z-index:1; text-align:center; padding:clamp(45px,5vw,90px) 24px 0; }
+.footer-invitation h2 { color:#043c38; font-size:clamp(38px,5.4vw,88px); line-height:.98; }
+.footer-invitation h2 span { color:#207c71; }
+.footer-invitation p { margin-top:18px; color:var(--muted); font-size:clamp(13px,1.3vw,18px); }
+.footer-invitation .button { margin-top:22px; }
+.finish-scene { position:absolute; inset:0; z-index:-1; }
+.finish-art,.finish-art img { display:block; width:100%; height:100%; }
+.finish-art img { object-fit:fill; }
+.footer-panel { position:relative; z-index:1; padding:34px 0 26px; background:var(--footer-ink); }
+.footer-top { display:flex; align-items:center; justify-content:space-between; gap:32px; }
+.footer-wordmark { font-family:var(--display); font-size:clamp(28px,3vw,44px); font-weight:600; line-height:1.1; letter-spacing:-.025em; white-space:nowrap; }
+.footer-wordmark span { display:inline-block; color:var(--gold); font-size:.9em; margin-left:7px; vertical-align:middle; }
+.footer-top nav { display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:12px 22px; font-size:12px; font-weight:600; }
+.footer-top nav a { padding-block:8px; }
+.footer-top nav a:hover { color:var(--gold); }
+.footer-community { display:flex; align-items:center; justify-content:space-between; gap:24px; margin-block:24px; }
+.footer-community > p { color:#c0d8d0; font-size:13px; }
+.social-menu { display:flex; align-items:center; gap:18px; }
+.social-menu summary { display:inline-flex; align-items:center; gap:8px; list-style:none; cursor:pointer; min-height:44px; font-size:12px; font-weight:600; user-select:none; }
+.social-menu summary::-webkit-details-marker { display:none; }
+.social-menu summary svg { width:16px; height:16px; transition:transform .18s ease; }
+.social-menu[open] summary svg { transform:rotate(180deg); }
+.social-menu[open] summary { margin-right:16px; }
+.social-links { display:inline-flex; flex-wrap:wrap; align-items:center; gap:8px; vertical-align:middle; }
+.social-links a { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:44px; padding:10px 14px; border:1px solid #ffffff38; border-radius:999px; background:#ffffff09; font-size:12px; font-weight:600; transition:background .18s,color .18s; }
+.social-links svg { width:17px; height:17px; flex-shrink:0; }
+.social-links a:hover { color:var(--footer-ink); background:var(--gold); border-color:var(--gold); }
+.footer-bottom { display:grid; grid-template-columns:auto 1fr; align-items:baseline; gap:24px; padding-top:22px; border-top:1px solid #ffffff30; font-size:11px; line-height:1.7; color:#c0d8d0; }
+.footer-bottom .team-credit { margin:0; padding:0; text-align:right; font-size:inherit; line-height:inherit; color:inherit; }
+.site-footer a:focus-visible,.site-footer summary:focus-visible { outline:2px solid var(--gold); outline-offset:5px; border-radius:6px; }
+@media(max-width:1000px) {
+  .footer-top { align-items:flex-start; flex-direction:column; gap:20px; }
+  .footer-top nav { justify-content:flex-start; gap:12px 26px; }
+}
+@media(max-width:760px) {
+  .footer-visual { height:175vw; min-height:760px; max-height:1120px; }
+  .footer-visual::after { height:10%; }
+  .footer-invitation { padding:40px 18px 0; }
+  .footer-invitation h2 { font-size:clamp(33px,7vw,52px); }
+  .footer-invitation p { max-width:300px; margin:16px auto 0; font-size:14px; }
+  .footer-panel { padding:28px 0 24px; }
+  .footer-wordmark { font-size:clamp(26px,7.2vw,39px); }
+  .footer-top nav { gap:4px 20px; font-size:12px; }
+  .footer-community { align-items:flex-start; flex-direction:column; gap:8px; margin-block:20px; }
+  .social-menu[open] summary { margin-right:0; }
+  .social-menu { display:block; width:100%; }
+  .social-links { display:flex; gap:8px; margin-top:6px; }
+  .social-links a { flex:1; padding:10px; }
+  .footer-bottom { grid-template-columns:minmax(0,1fr) minmax(0,1.65fr); align-items:baseline; gap:16px; font-size:10px; }
+  .footer-copyright { max-width:135px; }
+}
+@media(prefers-reduced-motion:reduce) { .social-menu summary svg,.social-links a { transition:none; } }

@@ -1,0 +1,116 @@
+/* Promotional flow. The existing hero and finish scene remain independent. */
+.gameplay-preview { padding-bottom: 36px; }
+.gameplay-heading, .summary-heading { display: grid; grid-template-columns: 1.35fr 1fr; gap: 70px; align-items: end; }
+.gameplay-heading h2 { font-size: clamp(36px, 3.7vw, 53px); }
+.gameplay-heading .button { margin-top: 24px; }
+.gameplay-heading p, .summary-heading > p { font-size: 14px; }
+.gameplay-capture { margin-top: 36px; }
+.gameplay-capture a { display: block; position: relative; border-radius: 24px; overflow: hidden; border: 1px solid var(--line); }
+.gameplay-capture img { width: 100%; height: auto; }
+.gameplay-capture-tag { position: absolute; bottom: 24px; right: 24px; background: var(--ink); color: white; border-radius: 99px; padding: 8px 14px; font-size: 11px; }
+.gameplay-capture figcaption { font-size: 11px; margin-top: 10px; color: var(--muted); }
+.gameplay-facts { display: grid; grid-template-columns: repeat(3, 1fr); padding: 28px 0; margin-top: 40px; border-block: 1px solid var(--line); }
+.gameplay-facts span { padding-inline: 28px; font-size: 12px; color: var(--muted); border-left: 1px solid var(--line); }
+.gameplay-facts span:first-child { border-left: 0; padding-left: 0; }
+.gameplay-facts strong { display: block; color: var(--ink); font-family: var(--display); font-weight: 500; font-size: 25px; margin-bottom: 5px; }
+.gameplay-caption { font-size: 11px; margin-top: 18px; }
+.mechanics { padding-top: 50px; }
+.blockchain-summary { border-top: 1px solid var(--line); }
+.summary-heading h2 span { color: #7054ae; }
+.contribution-flow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 38px; list-style: none; padding: 0; margin: 40px 0; }
+.contribution-flow li { padding-top: 22px; border-top: 2px solid #e6dfef; }
+.flow-number { color: #7054ae; font: 500 25px var(--display); }
+.contribution-flow h3 { font-size: 28px; margin: 16px 0 12px; }
+.contribution-flow p { font-size: 13px; }
+.summary-bottom { display: flex; justify-content: space-between; gap: 24px; align-items: center; padding: 24px 28px; border-radius: 20px; background: #f5f2fa; }
+.summary-bottom > div { display: flex; gap: 18px; align-items: center; }
+.summary-monad { display: grid; place-items: center; width: 56px; height: 56px; flex: none; border-radius: 17px; background: #7054ae; color: white; font: 600 34px var(--display); transform: rotate(-7deg); }
+.summary-bottom p { font-size: 12px; }
+.summary-bottom strong { display: block; color: #59418b; font-size: 15px; }
+.summary-bottom p a { text-decoration: underline; text-underline-offset: 3px; }
+.summary-note { font-size: 11px; margin-top: 20px; max-width: 860px; }
+.playtest-section { display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; border: 1px solid #d8e5da; border-radius: 30px; background: #f2f6ef; margin-block: 10px 30px; }
+.playtest-invitation { padding: clamp(28px, 4vw, 62px); position: relative; overflow: hidden; }
+.playtest-invitation h2 { font-size: clamp(44px, 4.8vw, 68px); }
+.playtest-invitation > p:not(.section-label) { font-size: 14px; max-width: 360px; margin-top: 24px; }
+.playtest-invitation ul { list-style: none; padding: 0; margin: 26px 0 80px; font-size: 13px; }
+.playtest-invitation li { margin: 10px 0; }
+.playtest-invitation li:before { content: '✓'; color: var(--green); font-weight: 700; margin-right: 10px; }
+.playtest-stamp { display: inline-block; padding: 9px 13px; border: 1px dashed #739486; border-radius: 9px; font-size: 11px; font-weight: 700; transform: rotate(-3deg); }
+.playtest-invitation > img { position: absolute; right: 12px; bottom: -12px; width: 145px; pointer-events: none; }
+.playtest-form-panel { padding: clamp(26px, 3.4vw, 50px); background: white; }
+.playtest-form-panel h3 { font-size: 35px; }
+.form-intro { margin: 14px 0 24px; font-size: 13px; }
+.playtest-form-panel label:not(.consent-label), .cancel-playtest label { display: block; font-size: 12px; font-weight: 700; margin: 17px 0 7px; }
+.playtest-form-panel label small { font-weight: 400; color: var(--muted); }
+.playtest-form-panel input:not([type=checkbox]), .playtest-form-panel select, .cancel-playtest input { width: 100%; min-width: 0; min-height: 48px; padding: 12px 14px; font: 400 16px var(--body); color: var(--ink); border: 1px solid #cbdad2; border-radius: 10px; background: #fff; }
+.playtest-form-panel input::placeholder { color: #7b8781; }
+.consent-label { display: flex; align-items: flex-start; gap: 11px; font-size: 11px; line-height: 1.7; margin: 22px 0; color: var(--muted); cursor: pointer; }
+.consent-label input { width: 18px; height: 18px; flex: none; margin: 2px 0 0; accent-color: var(--green); }
+.consent-label a, #playtest-receipt a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+#playtest-form > button { width: 100%; }
+.playtest-form-panel button:disabled, .cancel-playtest button:disabled { opacity: .6; cursor: wait; }
+.form-message { font-size: 13px; margin-top: 15px; color: var(--ink); }
+.form-message:empty { display: none; }
+.form-message[data-error=true] { color: #a63027; }
+.form-footnote { font-size: 10px; margin-top: 15px; }
+.form-trap { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.playtest-success { padding-block: 30px; }
+.success-mark { display: grid; place-items: center; width: 62px; height: 62px; border-radius: 50%; background: var(--mint); color: var(--green); font-size: 28px; margin-bottom: 25px; }
+.playtest-success > p { margin: 24px 0; font-size: 14px; }
+#playtest-receipt { padding: 18px; background: #f2f6ef; border-radius: 12px; margin: 25px 0; }
+#playtest-receipt label { margin-top: 0; }
+#playtest-receipt input { font: 12px/1.5 monospace; }
+#playtest-receipt a { display: inline-block; }
+#playtest-receipt p { font-size: 11px; margin-top: 10px; }
+.faq-section { display: grid; grid-template-columns: .7fr 1.3fr; gap: 90px; padding-block: 80px; }
+.faq-section > div > p:not(.section-label) { font-size: 14px; margin-top: 20px; max-width: 250px; }
+.faq-list details { border-bottom: 1px solid var(--line); }
+.faq-list summary { padding: 21px 36px 21px 0; font-size: 14px; font-weight: 700; cursor: pointer; position: relative; list-style: none; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary:after { content: '+'; position: absolute; right: 0; top: 18px; font-size: 24px; font-weight: 400; color: var(--green); }
+.faq-list details[open] summary:after { content: '−'; }
+.faq-list details p { font-size: 13px; padding-bottom: 22px; }
+.cancel-playtest { padding-block: 24px 75px; }
+.cancel-playtest details { max-width: 650px; }
+.cancel-playtest summary { cursor: pointer; font-weight: 600; }
+.cancel-playtest p { margin-top: 18px; font-size: 13px; }
+.cancel-playtest button { margin-top: 20px; }
+.economy-page { padding-top: 30px; }
+.economy-page .web3-heading h1 { font-size: clamp(46px, 6vw, 76px); }
+@media (max-width: 1000px) {
+  .gameplay-heading, .summary-heading { gap: 35px; }
+  .playtest-invitation > img { width: 110px; }
+  .faq-section { gap: 40px; }
+  .desktop-nav { gap: 22px; }
+}
+@media (max-width: 760px) {
+  .gameplay-capture-tag { bottom: 12px; right: 12px; font-size: 9px; padding: 6px 10px; }
+  .gameplay-heading, .summary-heading, .playtest-section, .faq-section { grid-template-columns: 1fr; gap: 28px; }
+  .gameplay-facts { gap: 16px; }
+  .gameplay-facts span { padding-inline: 14px; }
+  .gameplay-facts strong { font-size: 20px; line-height: 1.2; margin-bottom: 10px; }
+  .contribution-flow { grid-template-columns: 1fr; gap: 20px; }
+  .contribution-flow li { display: grid; grid-template-columns: 32px 1fr; gap: 7px 15px; }
+  .contribution-flow h3 { margin: 0; font-size: 27px; }
+  .contribution-flow p { grid-column: 2; }
+  .summary-bottom { align-items: flex-start; flex-direction: column; padding: 24px; }
+  .summary-bottom .button { white-space: normal; }
+  .playtest-section { gap: 0; border-radius: 24px; }
+  .playtest-invitation { padding-bottom: 32px; }
+  .playtest-invitation ul { margin-bottom: 28px; }
+  .playtest-invitation > img { width: 112px; }
+  .playtest-form-panel { padding: 28px; }
+  .faq-section { padding-block: 60px; }
+  .faq-section h2 br { display: none; }
+  .faq-section > div > p:not(.section-label) { max-width: none; }
+}
+@media (max-width: 430px) {
+  .gameplay-facts { grid-template-columns: 1fr; padding-block: 12px; gap: 0; }
+  .gameplay-facts span, .gameplay-facts span:first-child { border-left: 0; border-bottom: 1px solid var(--line); padding: 17px 0; }
+  .gameplay-facts span:last-child { border-bottom: 0; }
+  .gameplay-facts strong { margin-bottom: 4px; }
+  .playtest-form-panel, .playtest-invitation { padding: 25px; }
+  .playtest-invitation > img { width: 95px; right: 0; }
+  .playtest-stamp { max-width: 190px; font-size: 10px; }
+}
